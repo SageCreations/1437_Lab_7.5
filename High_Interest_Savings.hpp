@@ -5,10 +5,14 @@
 //  Created by Bruce Gooch on 3/25/20.
 //
 
-#ifndef High_Interest_Savings_h
-#define High_Interest_Savings_h
+//  Edited by Edward Cruz on 03/29/2020.
 
-#include <stdio.h>
+#ifndef HIGH_INTEREST_SAVINGS_HPP
+#define HIGH_INTEREST_SAVINGS_HPP
+
+#include "Savings_Account.hpp"
+
+#include <iostream>
 #include <string>
 
 using namespace std;

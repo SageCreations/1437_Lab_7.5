@@ -5,10 +5,12 @@
 //  Created by Bruce Gooch on 3/25/20.
 //
 
-#ifndef Certificate_Of_Deposit_h
-#define Certificate_Of_Deposit_h
+#ifndef CERTIFICATE_OF_DEPOSIT_HPP
+#define CERTIFICATE_OF_DEPOSIT_HPP
 
-#include <stdio.h>
+#include "Bank_Account.hpp"
+
+#include <iostream>
 #include <string>
 
 using namespace std;

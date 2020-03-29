@@ -5,6 +5,8 @@
 //  Created by Bruce Gooch on 3/25/20.
 //
 
+//  Edited by Edward Cruz on 03/29/2020.
+
 #include "Bank_Account.hpp"
 #include "Checking_Account.hpp"
 
@@ -14,7 +16,7 @@
 #include "No_Service_Checking.hpp"
 #include "Savings_Account.hpp"
 #include "Certificate_Of_Deposit.hpp"
-#include "Service_Checking_Account.h"
+#include "Service_Charge_Checking.hpp"
 
 
 #include <iostream>

@@ -5,18 +5,19 @@
 //  Created by Bruce Gooch on 3/25/20.
 //
 
-#ifndef Bank_Account_hpp
-#define Bank_Account_hpp
+//  Edited by Edward Cruz on 03/29/2020.
 
-#include <stdio.h>
+#ifndef BANK_ACCOUNT_HPP
+#define BANK_ACCOUNT_HPP
+
+#include <iostream>
 #include <string>
 
 using namespace std;
 
-#include "Bank_Account.hpp"
 class Bank_Account
 {
-private:
+protected:
     string Owner;       // Varible to store the Account Owners name.
     double Balance;     // Varible to hold the Account Balance.
     int Account_Number; // Varible to hold Account Number.
