@@ -18,9 +18,13 @@ Service_Charge_Checking::Service_Charge_Checking(std::string OwnerName = "", dou
 
 //******* FUNCTIONS ***************************************
 void Service_Charge_Checking::addCheckCount() {
-    
+    CheckCount++;
 }
 
-// Create_Monthly_Statement() applys service charge and resets check count.
+void Service_Charge_Checking::Create_Monthly_Statement() {
+  Balance -= serviceCharge;
+  CheckCount = 0;
+} //*******************************************************
+ //applys service charge and resets check count.
 
-  //*******************************************************
+  

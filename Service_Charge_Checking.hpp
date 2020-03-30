@@ -19,7 +19,7 @@ public:
     void addCheckCount();
     Service_Charge_Checking(string, double, int, int, int, int);
     //Service_Charge_Checking(string OwnerName = "", double StartBalance = 0.0, int ActBal = 0, int serviceFee = 5, int MaxCheckCount = 5, int CurrentChecks = 0);
-    // Create_Monthly_Statement() applys service charge and resets check count.
+    void Create_Monthly_Statement(); //applys service charge and resets check count.
 };
 
 

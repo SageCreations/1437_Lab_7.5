@@ -27,7 +27,7 @@ class High_Interest_Checking: public No_Service_Checking
     High_Interest_Checking(string, double, int, double NoServiceInterest, double);
     
     //High_Interest_Checking(string OwnerName = "", double StartBalance = 0.0, int ActBal = 0, double NoServiceInterest = 0.005, double MinBal = 5000.0);
-        // Create_Monthly_Statement() calculate interest and add it to balance
+    void Create_Monthly_Statement(); //calculate interest and add it to balance
        // No interest if Month end balance is less than minimum balance
 };
 

@@ -16,7 +16,8 @@ High_Interest_Savings::High_Interest_Savings(std::string OwnerName = "", double 
 } //*******************************************************
 
 //******* FUNCTIONS ***************************************
-
-// Create_Monthly_Statement() calculate interest and add it to balance
-
-  //*******************************************************
+void High_Interest_Savings::Create_Monthly_Statement() {
+  double amount = Balance;
+  amount *= interestRate;
+  Balance += amount;
+} //*******************************************************

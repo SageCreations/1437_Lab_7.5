@@ -35,21 +35,27 @@ int Bank_Account::Get_Number() {
 
 //******* FUNCTIONS ***************************************
 void Bank_Account::Make_Deposit(double Deposit_Amount) {
-
+    Balance += Deposit_Amount;
 }
 
 bool Bank_Account::Can_Withdraw(double Withdraw_Amount) {
-
+    if (Withdraw_Amount > Balance) {
+        return false;
+    } else {
+        return true;
+    }
 }
 
 void Bank_Account::Make_Withdrawal(double Withdraw_Amount) {
-
+    Balance -= Withdraw_Amount;
 }
 
 void Bank_Account::Create_Monthly_Statement() {
-
+    
 }
 
 void Bank_Account::Print_Customer_Statement() {
-
+    std::cout << "\nOwner's Name  : " << Owner;
+    std::cout << "\nBalance       : $" << Balance;
+    std::cout << "\nAccount Number: " << Account_Number;
 } //*******************************************************

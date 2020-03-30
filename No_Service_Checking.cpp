@@ -26,6 +26,8 @@ No_Service_Checking::No_Service_Checking(std::string OwnerName, double StartBala
 
 //******* FUNCTIONS ***************************************
 
-// Create_Monthly_Statement() calculate interest and add it to balance
-
-  //*******************************************************
+void No_Service_Checking::Create_Monthly_Statement() {
+    double amount = Balance;
+    amount *= InterestRate;
+    Balance += amount;
+} //*******************************************************

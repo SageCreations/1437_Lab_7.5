@@ -25,7 +25,7 @@ class Savings_Account: public Bank_Account
         Savings_Account();
         Savings_Account(string, double, int, double);
     //Savings_Account(string OwnerName = "", double StartBalance = 0.0, int ActBal = 0, Double SavingsInterest = 0.003);
-    // Create_Monthly_Statement() calculate interest and add it to balance
+        void Create_Monthly_Statement();  //calculate interest and add it to balance
 };
 
 #endif /* Savings_Account_h */

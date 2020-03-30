@@ -25,7 +25,13 @@ High_Interest_Checking::High_Interest_Checking(std::string OwnerName, double Sta
 } //*******************************************************
 
 //******* FUNCTIONS ***************************************
-
-// Create_Monthly_Statement() calculate interest and add it to balance
-       // No interest if Month end balance is less than minimum balance
-  //*******************************************************
+ void High_Interest_Checking::Create_Monthly_Statement() {
+    if (Balance > MinimumBalance) {
+        double amount = Balance;
+        amount *= InterestRate;
+        Balance += amount;
+    }
+ }//*******************************************************
+// calculate interest and add it to balance
+// No interest if Month end balance is less than minimum balance
+  

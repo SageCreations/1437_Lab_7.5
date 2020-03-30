@@ -25,7 +25,7 @@ class High_Interest_Savings: public Savings_Account
     public:
         High_Interest_Savings(string, double, int, double, double);
    // High_Interest_Savings(string OwnerName = "", double StartBalance = 0.0, int ActBal = 0, double highInterestRate = 0.004, double MinBalance = 1500.0);
-       // Create_Monthly_Statement() calculate interest and add it to balance
+        void Create_Monthly_Statement(); // calculate interest and add it to balance
 };
 
 #endif /* High_Interest_Savings_h */

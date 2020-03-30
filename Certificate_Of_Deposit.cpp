@@ -16,5 +16,12 @@ Certificate_Of_Deposit::Certificate_Of_Deposit(string OwnerName = "", double Sta
     currentMonth = startMonth;
 } //*******************************************************
 
+//******* FUNCTIONS ***************************************
+void Certificate_Of_Deposit::Create_Monthly_Statement() {
+    double amount = Balance;
+    amount *= interestRate;
+    Balance += amount;
+} //*******************************************************
+
 // Create_Monthly_Statement() calculate interest and add it to balance
 //^^ this is also commented in the hpp file.

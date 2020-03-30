@@ -23,8 +23,9 @@ Savings_Account::Savings_Account(std::string OwnerName, double StartBalance, int
 } //*******************************************************
 
 //******* FUNCTIONS ***************************************
-
-
-// Create_Monthly_Statement() calculate interest and add it to balance
-
-  //*******************************************************
+void Savings_Account::Create_Monthly_Statement() {
+    double amount = Balance;
+    amount *= interestRate;
+    Balance += amount;
+} //*******************************************************
+//calculate interest and add it to balance
